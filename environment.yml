@@ -1,0 +1,27 @@
+# run: conda env create -f environment.yml
+# run: conda env update -f environment.yml
+# run: conda env remove -n crazycost
+name: crazycost
+# in order of priority: lowest (top) to highest (bottom)
+channels:
+  - anaconda
+  - plotly
+  - goodman # mysql-python for mac
+  - bioconda
+dependencies:
+  - click
+  - jupyter
+  - matplotlib
+  - numpy
+  - pandas
+  - pillow
+  - pip
+  - plotly
+  - pytest
+  - python=2
+  - scikit-image
+  - scipy
+  - seaborn
+  - tqdm
+#  - pip:
+#    - python-bioformats
